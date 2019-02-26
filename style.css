@@ -30,10 +30,6 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
-a {
-    color: #c2a00e;
-  }
-
 a:hover {
     color: #f0b800;
     text-decoration: none;
@@ -61,5 +57,133 @@ h6 {
 }
 .shadow {
     font-family: 'Vast Shadow', cursive;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+#sidebarCollapse {
+    position:absolute;
+    top: 40px;
+    left: 25px;
+    z-index: 10;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding: 20px 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    z-index: 999;
+    background: #080808;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    line-height: 35px;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse:hover, #dismiss:hover {
+    color: #c2a00e !important;
+}
+
+#sidebar .sidebar-header {
+    padding: 40px 0;
+}
+
+#sidebar ul.components {
+    padding: 50px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li  {
+    margin-bottom: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+#sidebar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+#sidebar ul li a:hover::after {
+    width: 100%;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
 }
 
