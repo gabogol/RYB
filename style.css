@@ -35,16 +35,22 @@ a:hover {
     text-decoration: none;
 }
 h1 {
+    font-size: 3.5rem;
 }
 h2 {
+    font-size: 3rem;
 }
 h3 {
+    font-size: 2.5rem;
 }
 h4 {
+    font-size: 2rem;
 }
 h5 {
+    font-size: 1.5rem;
 }
 h6 {
+    font-size: 1.2rem;
 }
 .dark {
     color: #fff !important;
@@ -59,35 +65,35 @@ h6 {
     font-family: 'Vast Shadow', cursive;
 }
 
+/********** Navbar *********+*/
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: transparent;
+    position: absolute;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
-
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
 }
+.logo {
+    z-index: 10;
+}
 
+/********** Sidebar *********+*/
 #sidebarCollapse {
-    position:absolute;
-    top: 40px;
-    left: 25px;
     z-index: 10;
     font-size: 1.6rem;
     font-weight: 100;
-    padding: 20px 25px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 #sidebar {
     width: 300px;
     position: fixed;
@@ -97,16 +103,15 @@ h6 {
     z-index: 999;
     background: #080808;
     color: #fff;
+    text-align: left;
     transition: all 0.3s;
     overflow-y: scroll;
     padding: 10px 30px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
-
 #sidebar.active {
     left: 0;
 }
-
 #dismiss {
     line-height: 35px;
     text-align: left;
@@ -119,71 +124,61 @@ h6 {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 #sidebarCollapse:hover, #dismiss:hover {
     color: #c2a00e !important;
 }
-
 #sidebar .sidebar-header {
     padding: 40px 0;
 }
-
 #sidebar ul.components {
     padding: 50px 0;
 }
-
 #sidebar ul p {
     color: #fff;
     padding: 10px;
 }
-
 #sidebar ul li  {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
 #sidebar ul li a {
-    padding: 10px;
+    padding: 3px 0;
     font-size: 1em;
-    display: inline-block;
+    display: block;
     text-transform: uppercase;
     line-height: 2em;
-    text-decoration: none;
 }
-
-#sidebar ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    -webkit-transition: width 0.3s;
-    -o-transition: width 0.3s;
-    transition: width 0.3s;
-}
-
-#sidebar ul li a:hover::after {
-    width: 100%;
-}
-
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
+    border-bottom: 1px solid #c2a00e;
+    width: 20%;
 }
-
 a[data-toggle="collapse"] {
     position: relative;
 }
-
-.dropdown-toggle::after {
-    display: block;
+.sidebar-footer {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-footer img {
+    width: 40px;
+    height: auto;
+    padding: 0 5px;
+    margin-bottom: -25px;
+}
+.sidebar-footer h2 {
+    padding: 0 5px;
+    -ms-transform: rotate(-5deg); 
+    -webkit-transform: rotate(-5deg); 
+    transform: rotate(-5deg);
+}
+/********** Carousel *********+*/
+.carousel-caption {
+    bottom: 40%;
+}
+/********** Dropdown *********+*/
+.dropdown {
+    z-index: 10;
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    right: 5%;
+    top: 10%;
 }
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
