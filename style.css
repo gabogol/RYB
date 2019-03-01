@@ -412,3 +412,21 @@ a[data-toggle="collapse"] {
     background-size: cover;
     text-align: center;
 }
+.ideas .carousel-indicators {
+    left: -60px;
+}
+.ideas .carousel-indicators li {
+    background-color: #000;
+}
+.ideas .carousel-indicators li.active {
+    background-color: #ffc107;
+}
+.ideas .ideastitle {
+    -ms-transform: rotate(-4deg); 
+    -webkit-transform: rotate(-4deg); 
+    transform: rotate(-4deg);
+}
+.ideas .ideastitle h5,h2 {
+    line-height: .2rem;
+    margin-bottom: 0;
+}
