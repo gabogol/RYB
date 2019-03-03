@@ -20,6 +20,12 @@ body {
     font-weight: 400;
     background-color: #fff;
     color: #212121;
+    overflow-x: hidden !important;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+}
+header {
+    position: relative;
 }
 
 /********** Links & type *********+*/
@@ -83,8 +89,8 @@ h6 {
     position: absolute;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
     box-shadow: none;
+    width: 100%;
 }
 .navbar-btn {
     box-shadow: none;
@@ -92,9 +98,19 @@ h6 {
     border: none;
 }
 .logo {
-    z-index: 10;
+    z-index: 11;
 }
-
+.col-izq {
+    position: relative;
+    float: left;
+    z-index: 11;
+}
+.col-der {
+    position: relative;
+    float: right;
+    padding-right: 2%;
+    
+}
 /********** Sidebar *********+*/
 #sidebarCollapse {
     z-index: 10;
@@ -188,8 +204,8 @@ a[data-toggle="collapse"] {
     flex-direction: row;
     z-index: 10;
     position: absolute;
-    bottom: 30px;
-    right: 60px;
+    bottom: 0;
+    right: 2%;
 }
 .slider-footer img {
     width: 40px;
@@ -204,11 +220,8 @@ a[data-toggle="collapse"] {
     padding: 0 5px;
 }
 .carousel-indicators {
-    position: absolute;
-    /* right: 0; */
     bottom: 40%;
-    left: 10px;
-    z-index: 15;
+    z-index: 11;
     display: -ms-flexbox;
     display: inline-grid;
     -ms-flex-pack: center;
@@ -242,10 +255,8 @@ a[data-toggle="collapse"] {
 }
 /********** Dropdown *********+*/
 .dropdown {
-    z-index: 10;
-    position: absolute;
-    right: 5%;
-    top: 5%;
+    z-index: 12;
+    margin-bottom: 15%;
 }
 .dropdown-menu {
     opacity: 0;
@@ -365,6 +376,7 @@ a[data-toggle="collapse"] {
 .lipigas {
     background: url('img/bglipigas.png') center center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 80px 10%;
     color: #00397c;
     text-transform: uppercase;
@@ -432,3 +444,93 @@ footer .social {
     width: 30px;
     height: auto;
 }
+
+
+/********** Responsive *********+*/
+
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+
+@media (max-width: 576px) { }
+
+@media (max-width: 768px) {
+    .slider-footer img {
+        width: 30px;
+    }
+    .slider-footer h2 {
+        padding: 0 5px;
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        margin-right: 0;
+    }
+    .carousel-indicators {
+        bottom: 30%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .buscador {
+        padding: 50px 60px;
+    }
+    .buscador .custom-select {
+        margin: 5px auto;
+    }
+    .buscador .btn-warning {
+        margin-top: 15px;
+    }
+    .lipigas {
+        padding: 80px 5%;
+        background-attachment: scroll;
+    }
+    
+ }
+
+@media (max-width: 992px) { 
+    .navbar {
+        padding: 0;
+        background: #080808;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .dropdown {
+        margin-bottom: 0;
+    }
+    .btn-dropdown {
+        width: 250px;
+        background: #313131;
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+    .dropdown-menu h2 {
+        margin-bottom: 15px;
+        line-height: .8;
+        font-size: 2.5rem;
+    }
+    .ideas .carousel-indicators {
+        top: -7%;
+        left: 0;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    footer .list-inline-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0;
+    }
+    .dropdown-menu.show {
+        padding: 20px 5px;
+        width: 100%;
+        height: auto;
+    }
+ }
