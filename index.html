@@ -62,10 +62,10 @@
           <a href="#">Noticias</a>
         </li>
       </ul>
-      <div class="sidebar-footer">
+      <div class="sidebar-footer diagonal">
         <h2 class="cookie">Síguenos</h2>
-        <a href="#" target="_blank" class="img-fluid"><img src="img/facebook.svg" alt=""></a>
-        <a href="#" target="_blank" class="img-fluid"><img src="img/instagram.svg" alt=""></a>
+        <a href="#" target="_blank" ><img src="img/facebook.svg" class="img-fluid" alt=""></a>
+        <a href="#" target="_blank" ><img src="img/instagram.svg" class="img-fluid" alt=""></a>
       </div>
     </nav>
 
@@ -88,7 +88,7 @@
         <span class="amarillo">¿Tienes food truck?</span><span class="pl-2">Ingresa</span>
       </button>
       <div class="dropdown-menu">
-        <h2 class="dark cookie">¿tienes un food truck?</h2>
+        <h2 class="dark cookie diagonal">¿tienes un food truck?</h2>
         <strong>Ingresa aquí y aprovecha tus beneficios</strong>
         <form class="px-4 py-3">
           <div class="form-group">
@@ -134,10 +134,10 @@
             <div class="carousel-item">
               <img class="d-block w-100" src="https://wallpapercave.com/wp/ykcroDx.jpg" alt="Second slide">
             </div>-->
-          <div class="slider-footer">
+          <div class="slider-footer diagonal">
             <h2 class="cookie dark">Síguenos</h2>
-            <a href="#" target="_blank" class="img-fluid"><img src="img/facebook.svg" alt=""></a>
-            <a href="#" target="_blank" class="img-fluid"><img src="img/instagram.svg" alt=""></a>
+            <a href="#" target="_blank" ><img src="img/facebook.svg" alt="" class="img-fluid"></a>
+            <a href="#" target="_blank" ><img src="img/instagram.svg" alt="" class="img-fluid"></a>
           </div>
         </div>
       </div>
@@ -145,31 +145,35 @@
       <!--Buscador-->
       <div class="container-fluid buscador">
         <div class="row">
-          <div class="col-4">
-            <div class="favorito">
+          <div class="col-4 pl-3">
+            <div class="favorito diagonal">
               <h4 class="amarillo narrow m-0">Busca tu food truck</h4>
               <h2 class="vastshadow text-uppercase m-0 display-4">Favorito</h2>
             </div>
           </div>
-          <div class="col-8 py-4 pl-4">
-            <form class="form-inline">
-              <div class="form-group mb-2">
-                <select class="custom-select dark">
-                  <option selected>Región en Chile</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+          <div class="col-8 py-4 pl-5">
+            <form>
+              <div class="row p-0">
+                <div class="col-5">
+                    <select class="custom-select dark">
+                        <option selected>Región en Chile</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col-5">
+                    <select class="custom-select dark">
+                        <option selected>Tipo de Comida</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-warning mb-2 btn-block">Buscar</button>
+                </div>
               </div>
-              <div class="form-group mx-sm-3 mb-2">
-                <select class="custom-select dark">
-                  <option selected>Tipo de Comida</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-warning mb-2">Buscar</button>
             </form>
           </div>
         </div>
@@ -197,19 +201,19 @@
       <!--Ideas-->
       <div class="container-fluid ideas p-0">
         <div class="row no-gutters">
-          <div class="col p-5 px-5">
-            <div class="ideastitle">
-              <h5 class="narrow amarillo">Revisa nuevas ideas</h5>
-              <h2 class="cookie display-1">Rápidas y</h2>
-              <h2 class="vastshadow mb-5 text-uppercase ">Sabrosas</h2>
+          <div class="col p-5">
+            <div class="diagonal rapidas">
+                <h5 class="narrow amarillo">Revisa nuevas ideas</h5>
+                <h2 class="cookie display-1">Rápidas y</h2>
+                <h2 class="vastshadow mb-5 text-uppercase">Sabrosas</h2>
             </div>
-            <div class="px-4">
+            <div class="mt-5 text-left w-75 mx-auto">
               <p><strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                   deleniti atque.</strong></p>
               <p>Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
                 sunt
                 in culpa qui officia deserunt mollitia animi, id est laborum. </p>
-              <a href="#">Ver todas las recetas</a>
+              <a href="#" class="float-right"><i class="fas fa-play amarillo px-2"></i>Ver todas las recetas</a>
             </div>
           </div>
           <div class="col p-0">
@@ -243,6 +247,41 @@
           </div>
         </div>
       </div>
+
+      <!--Footer-->
+      <footer class="container-fluid p-5 dark">
+        <div class="row">
+          <div class="col-3 pl-5">
+            <img src="img/logofooter.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-9">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="offset-8 col-2">
+                    <img src="img/footerlipigas.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-2">
+                    <img src="img/footer-cooking.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-5 pt-3">
+                <ul class="list-inline float-right narrow">
+                  <li class="list-inline-item active"><a href="#">Inicio</a></li>
+                  <li class="list-inline-item"><a href="#">Food trucks</a></li>
+                  <li class="list-inline-item"><a href="#">Ferias y plazas de bolsillo</a></li>
+                  <li class="list-inline-item"><a href="#">Recetas</a></li>
+                  <li class="list-inline-item"><a href="#">Emprendimiento</a></li>
+                  <li class="list-inline-item"><a href="#">Noticias</a></li>
+                  <li class="list-inline-item"><a href="#"><img src="img/facebook.svg" class="img-fluid social" alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="img/instagram.svg" class="img-fluid social" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!--end content-->
     </div>
