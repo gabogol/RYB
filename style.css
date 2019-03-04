@@ -204,7 +204,7 @@ a[data-toggle="collapse"] {
     flex-direction: row;
     z-index: 10;
     position: absolute;
-    bottom: 0;
+    bottom: 4%;
     right: 2%;
 }
 .slider-footer img {
@@ -457,38 +457,15 @@ footer .social {
 @media (min-width: 1200px) { }
 
 
-@media (max-width: 576px) { }
-
-@media (max-width: 768px) {
-    .slider-footer img {
-        width: 30px;
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0;
     }
-    .slider-footer h2 {
-        padding: 0 5px;
-        font-size: 2rem;
+    .dropdown-menu.show {
+        padding: 20px 5px;
+        width: 100%;
+        height: auto;
     }
-    .navbar-brand {
-        margin-right: 0;
-    }
-    .carousel-indicators {
-        bottom: 30%;
-        margin-right: 3%;
-        margin-left: 3%;
-    }
-    .buscador {
-        padding: 50px 60px;
-    }
-    .buscador .custom-select {
-        margin: 5px auto;
-    }
-    .buscador .btn-warning {
-        margin-top: 15px;
-    }
-    .lipigas {
-        padding: 80px 5%;
-        background-attachment: scroll;
-    }
-    
  }
 
 @media (max-width: 992px) { 
@@ -524,13 +501,57 @@ footer .social {
     }
 }
 
-@media (max-width: 1200px) {
-    .navbar {
-        padding: 0;
+@media (max-width: 768px) {
+    .slider-footer img {
+        width: 30px;
+        padding: 8px 3px;
+    }
+    .slider-footer h2 {
+        padding: 0 5px;
+        font-size: 1.6rem;
+        margin-top: .5rem;
+    }
+    .navbar-brand {
+        margin-right: 0;
+        max-width: 180px;
+    }
+    .carousel-indicators {
+        bottom: 30%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .buscador {
+        padding: 50px 60px;
+    }
+    .buscador .custom-select {
+        margin: 5px auto;
+    }
+    .buscador .btn-warning {
+        margin-top: 15px;
+    }
+    .lipigas {
+        padding: 80px 5%;
+        background-attachment: scroll;
+    }
+    
+ }
+
+@media (max-width: 576px) { 
+    .buscador {
+        padding: 50px 30px;
+    }
+    .buscador .favorito h2 {
+        font-size: 2.2rem;
+    }
+    .ideas .rapidas h2 {
+        font-size: 2.2rem;
+        line-height: 2rem;
     }
     .dropdown-menu.show {
-        padding: 20px 5px;
-        width: 100%;
-        height: auto;
+        background: #c3a100f5;
     }
- }
+    .logo-footer {
+        max-width: 150px;
+    }
+}
+
