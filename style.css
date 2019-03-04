@@ -445,6 +445,12 @@ footer .social {
     height: auto;
 }
 
+/********** Page Recetas *********+*/
+.recetas {
+    background: url('img/bgrecetas.jpg') top center no-repeat;
+    background-size: cover;
+}
+
 
 /********** Responsive *********+*/
 
