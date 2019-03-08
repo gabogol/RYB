@@ -32,7 +32,7 @@
 
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper page-recetas">
     <header>
       <!-- Sidebar  -->
       <nav id="sidebar">
@@ -70,10 +70,10 @@
       </nav>
 
       <!--Navbar-->
-      <div class="navbar navbar-inverse navbar-expand-lg">
-        <div class="container-fluid justify-content-center justify-content-md-between">
+      <div class="navbar-page navbar-light navbar-expand-lg">
+        <div class="container-fluid">
           <div class="col-izq px-3">
-            <span id="sidebarCollapse" class="dark">
+            <span id="sidebarCollapse" class="">
               <i class="fas fa-bars"></i>
             </span>
             <a class="logo" href="#">
@@ -114,20 +114,216 @@
     </header>
 
     <!-- Page Content  -->
-    <div id="content recetas">
-        <!--Titulo Page-->
+    <div id="content">
+      <!--Subheader-->
+      <div class="subheader">
         <div class="container-fluid">
-            <div class="row h-75 justify-content-center align-items-center">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-9 diagonal"><h1 class="cookie">Del carro</h1><h1 class="vastshadow">A tu cocina</h1></div>
-                        <div class="col-3"><img src="img/recetasico.png" alt=""></div>
-                    </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row no-gutters h-260 align-items-center justify-content-center">
+                <div class="text-center diagonal tit-page">
+                  <h1 class="cookie display-3">Del carro</h1>
+                  <h1 class="vastshadow text-uppercase">A tu cocina</h1>
                 </div>
+                <div class="text-left ico-page"><img src="img/recetasico.png" alt=""></div>
+              </div>
             </div>
+          </div>
         </div>
-     
+      </div>
 
+      <!--filtro-->
+      <div class="filtro">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <form>
+                <div class="row p-0">
+                  <div class="offset-md-3 col-md-4">
+                    <select class="custom-select dark">
+                      <option selected>Región en Chile</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <button type="submit" class="btn btn-warning mb-2 btn-block">Buscar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Recetas-->
+      <div class="recetas">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-4">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+              </div>
+              <div class="d-flex mb-1 border-bottom border-warning p-1">
+                <div class="mr-auto p-2">
+                  <h6>Pinche Guacamole</h6>
+                </div>
+                <div class="p-2">
+                  <a href="#">Compartir</a>
+                </div>
+                <div class="p-2 ">
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4"><div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+              </div>
+              <div class="d-flex mb-1 border-bottom border-warning p-1">
+                <div class="mr-auto p-2">
+                  <h6>Pinche Guacamole</h6>
+                </div>
+                <div class="p-2">
+                  <a href="#">Compartir</a>
+                </div>
+                <div class="p-2 ">
+                  <i class="fas fa-share"></i>
+                </div>
+              </div></div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                  </div>
+                  <div class="d-flex mb-1 border-bottom border-warning p-1">
+                    <div class="mr-auto p-2">
+                      <h6>Pinche Guacamole</h6>
+                    </div>
+                    <div class="p-2">
+                      <a href="#">Compartir</a>
+                    </div>
+                    <div class="p-2 ">
+                      <i class="fas fa-share"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="mb-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+            </li>
+          </ul>
+        </nav>
 
       <!--Footer-->
       <footer class="container-fluid p-5 dark">
@@ -136,7 +332,7 @@
           <div class="col-12 col-sm-3 text-center mb-5 mb-sm-1">
             <img src="img/logofooter.png" class="img-fluid pl-4 logo-footer" alt="">
           </div>
-           <!--Col derecha-->
+          <!--Col derecha-->
           <div class="col-12 col-sm-9">
             <div class="row">
               <!--Col logos-->
@@ -161,11 +357,13 @@
                   <li class="list-inline-item"><a href="#">Recetas</a></li>
                   <li class="list-inline-item"><a href="#">Emprendimiento</a></li>
                   <li class="list-inline-item"><a href="#">Noticias</a></li>
-                 
+
                 </ul>
                 <ul class="list-inline text-center text-sm-right">
-                    <li class="list-inline-item"><a href="#"><img src="img/facebook.svg" class="img-fluid social"alt=""></a></li>
-                    <li class="list-inline-item"><a href="#"><img src="img/instagram.svg" class="img-fluid social"alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="img/facebook.svg" class="img-fluid social"
+                        alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="img/instagram.svg" class="img-fluid social"
+                        alt=""></a></li>
                 </ul>
               </div>
             </div>
