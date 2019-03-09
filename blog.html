@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|PT+Sans+Narrow:700|PT+Sans:400,700,900|Vast+Shadow"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!--Estilo-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <div class="wrapper page-recetas">
+        <header>
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <div id="dismiss" class="mb-4">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Food trucks</a>
+                    </li>
+                    <li>
+                        <a href="#">Ferias y plazas de bolsillo</a>
+                    </li>
+                    <li>
+                        <a href="#">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="#">La Llama del EmprendimientO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Noticias</a>
+                    </li>
+                </ul>
+                <div class="sidebar-footer ">
+                    <h2 class="cookie diagonal">Síguenos</h2>
+                    <a href="#" target="_blank"><img src="img/facebook.svg" class="img-fluid" alt=""></a>
+                    <a href="#" target="_blank"><img src="img/instagram.svg" class="img-fluid" alt=""></a>
+                </div>
+            </nav>
+
+            <!--Navbar-->
+            <div class="navbar-page navbar-light navbar-expand-lg">
+                <div class="container-fluid justify-content-center justify-content-md-between">
+                    <div class="col-izq px-3">
+                        <span id="sidebarCollapse" class="">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <a class="logo" href="#">
+                            <img src="img/logo.png" alt="" class="navbar-brand img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-der ingresa">
+                        <!--Dropdown-->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle btn-dropdown" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="amarillo">¿Tienes food truck?</span><span class="pl-2">Ingresa</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <h2 class="dark cookie diagonal">¿tienes un food truck?</h2>
+                                <strong>Ingresa aquí y aprovecha tus beneficios</strong>
+                                <form class="px-2 px-lg-4 py-1">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-sm"
+                                            id="exampleDropdownFormEmail1" placeholder="Login">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-sm"
+                                            id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-dark">Entrar</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item">¿Eres nuevo miembro?</a>
+                                <a href="#" class="btn btn-warning btn-sm">Regístrate</a>
+                                <a class="dropdown-item" href="#">Recuperar contraseña</a>
+                                <img src="img/lipigas.png" class="img-fluid py-3" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <!--Subheader-->
+            <div class="subheader">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row no-gutters align-items-center justify-content-center">
+                                <div class="text-center diagonal tit-page">
+                                    <h1 class="cookie display-3">Las noticias</h1>
+                                    <h1 class="vastshadow text-uppercase">Food Truck</h1>
+                                </div>
+                                <div class="text-left ico-page"><img src="img/blogico.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--filtro-->
+            <div class="filtro">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="row p-0">
+                                    <div class="offset-md-2 col-md-3">
+                                        <select class="custom-select dark">
+                                            <option selected>Palabra Clave</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select class="custom-select dark">
+                                            <option selected>Fecha</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-warning mb-2 btn-block">Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Noticias-->
+            <div class="blog">
+                <div class="container">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-4 ">
+                            <img src="img/blogimg.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8 p-4 bg-light border-bottom border-warning">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h6>La Coctelera Festival: Cocktails Y Food Trucks Al Aire Libre</h6>
+                                    <hr>
+                                    <p class="py-3">Un festival en el que los mejores bares de Chile, deliciosos
+                                        cocktails y talentosos bartenders son protagonistas. Así podría resumirse La
+                                        Coctelera, el evento al aire libre que desde hace cuatro años... </p>
+                                    <a href="#" class="btn btn-warning my-2 my-md-0">Leer más</a>
+                                    <a href="#" class="btn btn-info">Compartir noticia<i class="fas fa-share pl-2"></i></a>
+                                </div>
+                                <div class="col-md-3 py-3 py-sm-0">
+                                    <span class="float-right text-secondary">17 abril 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-5">
+                            <div class="col-md-4 ">
+                                <img src="img/blogimg.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-8 p-4 bg-light border-bottom border-warning">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h6>La Coctelera Festival: Cocktails Y Food Trucks Al Aire Libre</h6>
+                                        <hr>
+                                        <p class="py-3">Un festival en el que los mejores bares de Chile, deliciosos
+                                            cocktails y talentosos bartenders son protagonistas. Así podría resumirse La
+                                            Coctelera, el evento al aire libre que desde hace cuatro años... </p>
+                                        <a href="#" class="btn btn-warning my-2 my-md-0">Leer más</a>
+                                        <a href="#" class="btn btn-info">Compartir noticia<i class="fas fa-share pl-2"></i></a>
+                                    </div>
+                                    <div class="col-md-3 py-3 py-sm-0">
+                                        <span class="float-right text-secondary">17 abril 2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters mb-5">
+                                <div class="col-md-4 ">
+                                    <img src="img/blogimg.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-8 p-4 bg-light border-bottom border-warning">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <h6>La Coctelera Festival: Cocktails Y Food Trucks Al Aire Libre</h6>
+                                            <hr>
+                                            <p class="py-3">Un festival en el que los mejores bares de Chile, deliciosos
+                                                cocktails y talentosos bartenders son protagonistas. Así podría resumirse La
+                                                Coctelera, el evento al aire libre que desde hace cuatro años... </p>
+                                            <a href="#" class="btn btn-warning my-2 my-md-0">Leer más</a>
+                                            <a href="#" class="btn btn-info">Compartir noticia<i class="fas fa-share pl-2"></i></a>
+                                        </div>
+                                        <div class="col-md-3 py-3 py-sm-0">
+                                            <span class="float-right text-secondary">17 abril 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+
+
+
+            <nav class="mb-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+                                class="fas fa-chevron-left"></i></a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Footer-->
+            <footer class="container-fluid p-5 dark">
+                <div class="row">
+                    <!--Col izquierda-->
+                    <div class="col-12 col-sm-3 text-center mb-5 mb-sm-1">
+                        <img src="img/logofooter.png" class="img-fluid pl-4 logo-footer" alt="">
+                    </div>
+                    <!--Col derecha-->
+                    <div class="col-12 col-sm-9">
+                        <div class="row">
+                            <!--Col logos-->
+                            <div class="col-12">
+                                <div class="row">
+                                    <!--Col logo 1-->
+                                    <div class="offset-2 col-4 offset-sm-6 col-sm-3 offset-lg-8 col-lg-2">
+                                        <img src="img/footerlipigas.png" class="img-fluid" alt="">
+                                    </div>
+                                    <!--Col logo 2-->
+                                    <div class="col-4 col-sm-3 col-lg-2">
+                                        <img src="img/footer-cooking.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Col menu-->
+                            <div class="col-12 mt-5 p-0">
+                                <ul class="list-inline text-center text-sm-right">
+                                    <li class="list-inline-item active"><a href="#">Inicio</a></li>
+                                    <li class="list-inline-item"><a href="#">Food trucks</a></li>
+                                    <li class="list-inline-item"><a href="#">Ferias y plazas de bolsillo</a></li>
+                                    <li class="list-inline-item"><a href="#">Recetas</a></li>
+                                    <li class="list-inline-item"><a href="#">Emprendimiento</a></li>
+                                    <li class="list-inline-item"><a href="#">Noticias</a></li>
+                                </ul>
+                                <ul class="list-inline text-center text-sm-right">
+                                    <li class="list-inline-item"><a href="#"><img src="img/facebook.svg"
+                                                class="img-fluid social" alt=""></a></li>
+                                    <li class="list-inline-item"><a href="#"><img src="img/instagram.svg"
+                                                class="img-fluid social" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!--end content-->
+        </div>
+        <!--end wrapper-->
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
